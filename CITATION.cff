@@ -7,40 +7,38 @@ type: software
 license: MIT
 
 authors:
-
-* name: "SamuraiWriter7"
+  - name: "SamuraiWriter7"
 
 repository-code: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
 
 abstract: >
-Royalty OS is an experimental value circulation architecture for the AI age.
-It connects human-originated thought, recorded through Trace Protocol, to
-recognition, attribution, evaluation, and future compensation mechanisms.
-The v0.1 candidate defines a minimum viable implementation for connecting
-origins, trace records, reference events, value signals, allocation rules,
-and return or recognition methods.
+  Royalty OS is an experimental value circulation architecture for the AI age.
+  It connects human-originated thought, recorded through Trace Protocol, to
+  recognition, attribution, evaluation, and future compensation mechanisms.
+  The v0.1 candidate defines a minimum viable implementation for connecting
+  origins, trace records, reference events, value signals, allocation rules,
+  and return or recognition methods.
 
 keywords:
-
-* "Royalty OS"
-* "Trace Protocol"
-* "Epicenter Network"
-* "AI"
-* "Artificial Intelligence"
-* "value circulation"
-* "origin trace"
-* "human-originated thought"
-* "creator economy"
-* "digital sovereignty"
-* "attribution"
-* "AI civilization"
+  - "Royalty OS"
+  - "Trace Protocol"
+  - "Epicenter Network"
+  - "AI"
+  - "Artificial Intelligence"
+  - "value circulation"
+  - "origin trace"
+  - "human-originated thought"
+  - "creator economy"
+  - "digital sovereignty"
+  - "attribution"
+  - "AI civilization"
 
 preferred-citation:
-type: software
-title: "Royalty OS v0.1: Trace-to-Value Circulation Architecture for the AI Age"
-authors:
-- name: "SamuraiWriter7"
-version: "0.1.0-candidate"
-date-released: "2026-06-04"
-repository-code: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
-license: MIT
+  type: software
+  title: "Royalty OS v0.1: Trace-to-Value Circulation Architecture for the AI Age"
+  authors:
+    - name: "SamuraiWriter7"
+  version: "0.1.0-candidate"
+  date-released: "2026-06-04"
+  repository-code: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
+  license: MIT
