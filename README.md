@@ -29,8 +29,8 @@ In other words, Royalty OS is designed to prevent human-originated questions, co
 ## Status
 
 ```text
-Version: v0.1.0-draft
-Status: Draft / Experimental Specification
+Version: v0.1.0-candidate
+Status: Candidate / Experimental Specification
 Stage: Minimum Viable Implementation
 ```
 
@@ -157,7 +157,9 @@ But the origin remains with the human epicenter.
 ```text
 .
 ├── docs/
-│   └── royalty-os-implementation.md
+│   ├── royalty-os-implementation.md
+│   ├── positioning.md
+│   └── comparison-matrix.md
 ├── spec/
 │   └── royalty-os-v0.1.yaml
 ├── examples/
@@ -169,6 +171,8 @@ But the origin remains with the human epicenter.
 ├── .github/
 │   └── workflows/
 │       └── validate-royalty-os.yml
+├── CHANGELOG.md
+├── CITATION.cff
 └── README.md
 ```
 
@@ -181,6 +185,38 @@ But the origin remains with the human epicenter.
 The main implementation document.
 
 It explains the purpose, philosophy, flow, implementation stages, minimal viable implementation, and future extensions of Royalty OS.
+
+### `docs/positioning.md`
+
+The positioning document.
+
+It clarifies:
+
+* what Royalty OS is,
+* what Royalty OS is not,
+* how it relates to Trace Protocol,
+* how it differs from copyright, citation systems, provenance systems, knowledge graphs, creator platforms, and AI attribution research.
+
+This document prevents overclaiming and defines the conceptual boundary of Royalty OS v0.1.
+
+### `docs/comparison-matrix.md`
+
+The comparison matrix document.
+
+It compares Royalty OS with adjacent systems and fields, including:
+
+* copyright
+* citation systems
+* data provenance
+* knowledge graphs
+* DRM
+* creator economy platforms
+* AI attribution research
+* blockchain / Web3
+* Trace Protocol
+* Epicenter Network
+
+This document supports the positioning of Royalty OS as a trace-to-value circulation architecture rather than a replacement for existing legal or technical systems.
 
 ### `spec/royalty-os-v0.1.yaml`
 
@@ -221,14 +257,28 @@ GitHub Actions workflow.
 
 It automatically validates Royalty OS examples on push, pull request, and manual workflow dispatch.
 
+### `CHANGELOG.md`
+
+The project changelog.
+
+It records candidate releases, draft milestones, added files, validation changes, and conceptual definitions.
+
+### `CITATION.cff`
+
+Citation metadata for the repository.
+
+It allows the specification to be cited in a structured format.
+
 ---
 
 ## Minimal Viable Implementation
 
-Royalty OS v0.1 requires four core files:
+Royalty OS v0.1 requires the following core files:
 
 ```text
 docs/royalty-os-implementation.md
+docs/positioning.md
+docs/comparison-matrix.md
 spec/royalty-os-v0.1.yaml
 examples/value-circulation.example.yaml
 schemas/royalty-os.schema.json
@@ -372,6 +422,50 @@ This stage requires additional legal, technical, and institutional design.
 
 ---
 
+## Relationship to Adjacent Fields
+
+Royalty OS does not replace existing systems.
+
+It is designed to complement them.
+
+### Copyright
+
+Copyright protects specific expressions.
+
+Royalty OS focuses on origin-aware value circulation.
+
+### Citation Systems
+
+Citation systems record formal references.
+
+Royalty OS extends citation logic into reference events, value signals, allocation rules, and return methods.
+
+### Data Provenance
+
+Data provenance records where data came from and how it changed.
+
+Royalty OS extends provenance thinking toward human-originated thought, conceptual lineage, and value return.
+
+### Knowledge Graphs
+
+Knowledge graphs can represent entities and relationships.
+
+Royalty OS can be represented as a graph, but it also defines a normative purpose: origin visibility and value circulation.
+
+### Creator Economy Platforms
+
+Creator platforms help creators monetize audiences.
+
+Royalty OS focuses on cross-platform origin tracing and value circulation.
+
+### AI Attribution Research
+
+AI attribution research identifies sources behind AI outputs.
+
+Royalty OS builds on attribution by asking how value should return once an origin or source is identified.
+
+---
+
 ## Non-Goals
 
 Royalty OS v0.1 does not attempt to solve all royalty, licensing, copyright, or compensation problems.
@@ -394,6 +488,8 @@ The purpose of v0.1 is to define the minimum structure for connecting trace to v
 
 Possible future extensions include:
 
+* modular schema architecture
+* append-only value event logs
 * Q-Point Protocol integration
 * AI reference detection
 * trace graph visualization
@@ -408,6 +504,7 @@ Possible future extensions include:
 * value allocation policies
 * AI-assisted lineage mapping
 * cross-platform trace registries
+* compensation mechanisms
 
 ---
 
@@ -431,9 +528,37 @@ But AI should not erase the ground where thought began.
 
 ---
 
+## Recommended Reading Order
+
+For first-time readers, the recommended order is:
+
+```text
+1. README.md
+2. docs/royalty-os-implementation.md
+3. docs/positioning.md
+4. docs/comparison-matrix.md
+5. spec/royalty-os-v0.1.yaml
+6. examples/value-circulation.example.yaml
+7. schemas/royalty-os.schema.json
+```
+
+This order moves from concept to positioning, comparison, specification, example, and validation.
+
+---
+
 ## License
 
 MIT License
+
+---
+
+## Citation
+
+If you use or reference this specification, please cite this repository using the metadata in:
+
+```text
+CITATION.cff
+```
 
 ---
 
@@ -455,4 +580,3 @@ Return visible value.
 ```
 
 Royalty OS begins here.
-
