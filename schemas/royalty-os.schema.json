@@ -1,0 +1,375 @@
+{
+"$schema": "https://json-schema.org/draft/2020-12/schema",
+"$id": "https://example.com/schemas/royalty-os.schema.json",
+"title": "Royalty OS Record Schema",
+"description": "JSON Schema for validating Royalty OS v0.1 value circulation records.",
+"type": "object",
+"additionalProperties": false,
+"required": [
+"royalty_os_version",
+"origin",
+"trace",
+"reference_event",
+"value_signal",
+"allocation",
+"status"
+],
+"properties": {
+"royalty_os_version": {
+"type": "string",
+"description": "The Royalty OS record version.",
+"enum": [
+"0.1"
+]
+},
+"origin": {
+"type": "object",
+"description": "The original human-generated source of a question, concept, structure, or work.",
+"additionalProperties": false,
+"required": [
+"origin_id",
+"origin_type",
+"title",
+"creator",
+"first_published",
+"primary_url"
+],
+"properties": {
+"origin_id": {
+"type": "string",
+"minLength": 1
+},
+"origin_type": {
+"type": "string",
+"enum": [
+"human_originated_thought",
+"question",
+"concept",
+"essay",
+"protocol",
+"specification",
+"technical_design",
+"philosophical_model",
+"creative_work",
+"research_note",
+"ai_assisted_human_originated_work"
+]
+},
+"title": {
+"type": "string",
+"minLength": 1
+},
+"creator": {
+"type": "string",
+"minLength": 1
+},
+"first_published": {
+"type": "string",
+"description": "Publication date in YYYY-MM-DD format.",
+"format": "date"
+},
+"primary_url": {
+"type": "string",
+"format": "uri"
+},
+"description": {
+"type": "string"
+},
+"language": {
+"type": "string",
+"minLength": 2
+},
+"license": {
+"type": "string"
+},
+"repository": {
+"type": "string",
+"format": "uri"
+},
+"related_origins": {
+"type": "array",
+"items": {
+"type": "string",
+"minLength": 1
+},
+"uniqueItems": true
+},
+"notes": {
+"type": "string"
+}
+}
+},
+"trace": {
+"type": "object",
+"description": "A structured record of origin and lineage.",
+"additionalProperties": false,
+"required": [
+"trace_id",
+"core_question",
+"related_concepts"
+],
+"properties": {
+"trace_id": {
+"type": "string",
+"minLength": 1
+},
+"trace_version": {
+"type": "string"
+},
+"core_question": {
+"type": "string",
+"minLength": 1
+},
+"trace_url": {
+"type": "string",
+"format": "uri"
+},
+"related_concepts": {
+"type": "array",
+"minItems": 1,
+"items": {
+"type": "string",
+"minLength": 1
+},
+"uniqueItems": true
+},
+"lineage": {
+"type": "array",
+"items": {
+"type": "string",
+"minLength": 1
+}
+},
+"derived_concepts": {
+"type": "array",
+"items": {
+"type": "string",
+"minLength": 1
+},
+"uniqueItems": true
+},
+"previous_versions": {
+"type": "array",
+"items": {
+"type": "string",
+"minLength": 1
+},
+"uniqueItems": true
+},
+"notes": {
+"type": "string"
+}
+}
+},
+"reference_event": {
+"type": "object",
+"description": "A record that another work, system, article, AI output, or repository has referenced the origin.",
+"additionalProperties": false,
+"required": [
+"event_id",
+"reference_type",
+"referenced_by",
+"reference_date",
+"context"
+],
+"properties": {
+"event_id": {
+"type": "string",
+"minLength": 1
+},
+"reference_type": {
+"type": "string",
+"enum": [
+"citation",
+"linkback",
+"conceptual_reference",
+"structural_dependency",
+"implementation_dependency",
+"translation",
+"summary",
+"derivative_work",
+"ai_generated_reference",
+"educational_reference",
+"research_reference",
+"commercial_reference"
+]
+},
+"referenced_by": {
+"type": "string",
+"minLength": 1
+},
+"reference_date": {
+"type": "string",
+"format": "date"
+},
+"context": {
+"type": "string",
+"minLength": 1
+},
+"reference_url": {
+"type": "string",
+"format": "uri"
+},
+"reference_depth": {
+"type": "string",
+"enum": [
+"shallow",
+"medium",
+"deep",
+"critical"
+]
+},
+"reference_scope": {
+"type": "string",
+"enum": [
+"mention",
+"supporting_context",
+"core_concept",
+"core_architecture",
+"implementation_basis",
+"commercial_basis"
+]
+},
+"ai_involved": {
+"type": "boolean"
+},
+"human_reviewed": {
+"type": "boolean"
+},
+"notes": {
+"type": "string"
+}
+}
+},
+"value_signal": {
+"type": "object",
+"description": "A signal indicating the strength or type of value created by the reference.",
+"additionalProperties": false,
+"required": [
+"signal_type",
+"signal_strength"
+],
+"properties": {
+"signal_type": {
+"type": "string",
+"enum": [
+"attribution",
+"citation",
+"reuse",
+"derivation",
+"implementation",
+"translation",
+"commercial_use",
+"educational_use",
+"research_use",
+"ai_reference",
+"community_recognition"
+]
+},
+"signal_strength": {
+"type": "string",
+"enum": [
+"low",
+"medium",
+"high",
+"critical"
+]
+},
+"signal_score": {
+"type": "number",
+"minimum": 0,
+"maximum": 1
+},
+"confidence": {
+"type": "number",
+"minimum": 0,
+"maximum": 1
+},
+"review_method": {
+"type": "string",
+"enum": [
+"human_review",
+"ai_assisted_review",
+"automated_detection",
+"community_review",
+"self_declared",
+"unknown"
+]
+},
+"notes": {
+"type": "string"
+}
+}
+},
+"allocation": {
+"type": "object",
+"description": "A rule that determines how value should return to the origin.",
+"additionalProperties": false,
+"required": [
+"allocation_type",
+"return_methods"
+],
+"properties": {
+"allocation_type": {
+"type": "string",
+"enum": [
+"non_monetary",
+"monetary",
+"hybrid",
+"experimental"
+]
+},
+"allocation_policy": {
+"type": "string"
+},
+"allocation_ratio": {
+"description": "Optional allocation ratio. Null is allowed when allocation is non-monetary or not yet defined.",
+"type": [
+"number",
+"null"
+],
+"minimum": 0,
+"maximum": 1
+},
+"recipient": {
+"type": "string"
+},
+"return_methods": {
+"type": "array",
+"minItems": 1,
+"items": {
+"type": "string",
+"enum": [
+"citation",
+"linkback",
+"credit",
+"conceptual_attribution",
+"version_lineage",
+"repository_reference",
+"acknowledgement",
+"collaboration_offer",
+"licensing_request",
+"financial_compensation",
+"royalty_payment",
+"point_allocation",
+"token_reward"
+]
+},
+"uniqueItems": true
+},
+"notes": {
+"type": "string"
+}
+}
+},
+"status": {
+"type": "string",
+"enum": [
+"draft",
+"active",
+"deprecated",
+"archived"
+]
+}
+}
+}
