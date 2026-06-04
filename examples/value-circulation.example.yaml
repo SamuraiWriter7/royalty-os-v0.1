@@ -1,89 +1,90 @@
 royalty_os_version: "0.1"
 
 origin:
-origin_id: "epicenter-network-001"
-origin_type: "human_originated_thought"
-title: "Epicenter Network"
-creator: "Kazene / SamuraiWriter7"
-first_published: "2026-06-04"
-primary_url: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
-description: >
-The Epicenter Network is a decentralized human intelligence layer
-that preserves human-originated thought against centralized AI absorption.
-language: "en"
-license: "MIT"
-repository: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
-related_origins:
-- "trace-protocol-001"
-- "royalty-os-001"
-notes: >
-This origin represents the first epicenter in the lineage:
-Epicenter Network -> Trace Protocol -> Royalty OS.
+  origin_id: "epicenter-network-001"
+  origin_type: "human_originated_thought"
+  title: "Epicenter Network"
+  creator: "Kazene / SamuraiWriter7"
+  first_published: "2026-06-04"
+  primary_url: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
+  description: >
+    The Epicenter Network is a decentralized human intelligence layer
+    that preserves human-originated thought against centralized AI absorption.
+  language: "en"
+  license: "MIT"
+  repository: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
+  related_origins:
+    - "trace-protocol-001"
+    - "royalty-os-001"
+  notes: >
+    This origin represents the first epicenter in the lineage:
+    Epicenter Network -> Trace Protocol -> Royalty OS.
 
 trace:
-trace_id: "trace-protocol-001"
-trace_version: "0.1"
-core_question: "How can we preserve the origin of human thought in the age of AI?"
-trace_url: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
-related_concepts:
-- "Epicenter Network"
-- "Trace Protocol"
-- "Royalty OS"
-- "Origin Trace"
-- "Question Trace"
-lineage:
-- "Epicenter Network"
-- "Trace Protocol"
-- "Royalty OS"
-derived_concepts:
-- "Trace-to-Value Circulation"
-- "Origin-Aware AI Civilization"
-- "Non-Monetary Value Return"
-previous_versions: []
-notes: >
-This trace records the conceptual relationship between the first
-epicenter and later value circulation structures.
+  trace_id: "trace-protocol-001"
+  trace_version: "0.1"
+  core_question: "How can we preserve the origin of human thought in the age of AI?"
+  trace_url: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
+  related_concepts:
+    - "Epicenter Network"
+    - "Trace Protocol"
+    - "Royalty OS"
+    - "Origin Trace"
+    - "Question Trace"
+  lineage:
+    - "Epicenter Network"
+    - "Trace Protocol"
+    - "Royalty OS"
+  derived_concepts:
+    - "Trace-to-Value Circulation"
+    - "Origin-Aware AI Civilization"
+    - "Non-Monetary Value Return"
+  previous_versions: []
+  notes: >
+    This trace records the conceptual relationship between the first
+    epicenter and later value circulation structures.
 
 reference_event:
-event_id: "ref-royalty-os-001"
-reference_type: "conceptual_reference"
-referenced_by: "Royalty OS article"
-reference_date: "2026-06-04"
-context: >
-The Royalty OS article references Epicenter Network and Trace Protocol
-as the foundational concepts for designing trace-to-value circulation.
-reference_url: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
-reference_depth: "deep"
-reference_scope: "core_architecture"
-ai_involved: true
-human_reviewed: true
-notes: >
-This reference event shows how a recorded trace becomes the basis
-for value circulation design.
+  event_id: "ref-royalty-os-001"
+  reference_type: "conceptual_reference"
+  referenced_by: "Royalty OS article"
+  reference_date: "2026-06-04"
+  context: >
+    The Royalty OS article references Epicenter Network and Trace Protocol
+    as the foundational concepts for designing trace-to-value circulation.
+  reference_url: "https://github.com/SamuraiWriter7/royalty-os-v0.1"
+  reference_depth: "deep"
+  reference_scope: "core_architecture"
+  ai_involved: true
+  human_reviewed: true
+  notes: >
+    This reference event shows how a recorded trace becomes the basis
+    for value circulation design.
 
 value_signal:
-signal_type: "attribution"
-signal_strength: "high"
-signal_score: 0.9
-confidence: 0.85
-review_method: "human_review"
-notes: >
-The value signal is high because Royalty OS directly builds on
-Epicenter Network and Trace Protocol as its conceptual foundation.
+  signal_type: "attribution"
+  signal_strength: "high"
+  signal_score: 0.9
+  confidence: 0.85
+  review_method: "human_review"
+  notes: >
+    The value signal is high because Royalty OS directly builds on
+    Epicenter Network and Trace Protocol as its conceptual foundation.
 
 allocation:
-allocation_type: "non_monetary"
-allocation_policy: "origin_recognition_first"
-allocation_ratio: null
-recipient: "Kazene / SamuraiWriter7"
-return_methods:
-- "citation"
-- "linkback"
-- "conceptual_attribution"
-- "version_lineage"
-- "repository_reference"
-notes: >
-In v0.1, value return is non-monetary and focuses on visible
-attribution, lineage preservation, and origin recognition.
+  allocation_type: "non_monetary"
+  allocation_policy: "origin_recognition_first"
+  allocation_ratio: null
+  recipient: "Kazene / SamuraiWriter7"
+  return_methods:
+    - "citation"
+    - "linkback"
+    - "conceptual_attribution"
+    - "version_lineage"
+    - "repository_reference"
+  notes: >
+    In v0.1, value return is non-monetary and focuses on visible
+    attribution, lineage preservation, and origin recognition.
 
 status: "draft"
+
